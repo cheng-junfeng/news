@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:id="@+id/panelBtn"
+        android:text="刻度盘"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:id="@+id/waterView"
+        android:text="加速球View"
+        android:layout_height="wrap_content" />
+
+    <com.custom.view.CircleTextView
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:textSize="@dimen/offset_20dp"
+        android:layout_width="@dimen/offset_50dp"
+        android:layout_height="@dimen/offset_50dp"
+        android:text="9"/>
+
+    <com.custom.view.DotView
+        android:id="@+id/dotView"
+        android:layout_width="@dimen/offset_50dp"
+        android:layout_height="@dimen/offset_50dp" />
+</LinearLayout>

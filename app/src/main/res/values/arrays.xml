@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="about_list">
+        <item>Current Version</item>
+        <item>Company Site</item>
+        <item>Open Source License</item>
+    </array>
+
+    <!--发现页图片-->
+    <integer-array name="find_gv_image1">
+        <item>@drawable/light_checked</item>
+        <item>@drawable/light_checked</item>
+        <item>@drawable/light_checked</item>
+        <item>@drawable/light_checked</item>
+    </integer-array>
+    <!--发现页图片对应的位子-->
+    <string-array name="find_gv_title1">
+        <item>Chart1</item>
+        <item>Chart2</item>
+        <item>Pie3</item>
+        <item>Design</item>
+    </string-array>
+</resources>

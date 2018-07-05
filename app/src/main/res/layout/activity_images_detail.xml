@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <com.library.widgets.SmoothImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/images_detail_smooth_image"
+        android:scaleType="fitCenter" />
+
+</LinearLayout>

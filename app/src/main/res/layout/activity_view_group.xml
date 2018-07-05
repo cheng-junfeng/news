@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/radarViewBtn"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="雷达菜单" />
+
+    <Button
+        android:id="@+id/water"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="瀑布流容器" />
+
+    <Button
+        android:id="@+id/selfDe"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自适应容器" />
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:id="@+id/histogramView"
+        android:text="水平图表"
+        android:layout_height="wrap_content" />
+</LinearLayout>

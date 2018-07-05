@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/progress1"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress 1" />
+
+    <Button
+        android:id="@+id/progress2"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress 2" />
+
+    <Button
+        android:id="@+id/progress3"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress 3" />
+
+    <Button
+        android:id="@+id/progress4"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress 4" />
+
+    <Button
+        android:id="@+id/progress5"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress 5" />
+
+    <Button
+        android:id="@+id/progress6"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress 6" />
+
+    <Button
+        android:id="@+id/progress7"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress 7" />
+
+    <Button
+        android:id="@+id/selfViewGroup"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义ViewGroup" />
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:id="@+id/selftView"
+        android:text="自定义View"
+        android:layout_height="wrap_content" />
+</LinearLayout>

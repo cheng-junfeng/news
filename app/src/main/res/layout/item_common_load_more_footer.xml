@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/common_load_more_footer_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/common_load_more_padding"
+    android:paddingBottom="@dimen/common_load_more_padding">
+
+    <com.library.progress.CircularProgressBar
+        android:id="@+id/common_load_more_footer_progress"
+        android:layout_width="@dimen/common_load_more_progress_size"
+        android:layout_height="@dimen/common_load_more_progress_size"
+        android:indeterminate="true"
+        android:indeterminateOnly="false"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:cpb_colors="@array/gplus_colors" />
+
+    <TextView
+        android:id="@+id/common_load_more_footer_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:text="@string/common_load_more_end"
+        android:textColor="@color/background_floating_material_dark"
+        android:textSize="@dimen/small_text" />
+</RelativeLayout>

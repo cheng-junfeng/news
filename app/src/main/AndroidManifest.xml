@@ -45,11 +45,6 @@
             android:theme="@style/AppTheme.NoneTranslucent" />
 
         <activity
-            android:name=".ui.home.fragment.AboutUsFragment"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait" />
-
-        <activity
             android:name=".ui.qrcode.CaptureActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
@@ -99,6 +94,9 @@
         <activity android:name=".ui.design.activitys.FlowActivity"></activity>
         <activity android:name=".ui.design.activitys.WaterActivity"></activity>
         <activity android:name=".ui.histogram.HistogramActivity"></activity>
+
+        <activity android:name=".ui.rude.RudeActivity"></activity>
+        <activity android:name=".ui.rude.NormalActivity"></activity>
     </application>
 
 </manifest>

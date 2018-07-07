@@ -13,6 +13,8 @@ public class NewsApplication extends Application {
     public void onCreate() {
         super.onCreate();
         ImageLoader.getInstance().init(ImageLoaderHelper.getInstance(this).getImageLoaderConfiguration(ApiConstants.Paths.IMAGE_LOADER_CACHE_PATH));
+
+        new DensityHelper(this, 750).activate();
     }
 
     @Override

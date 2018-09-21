@@ -21,6 +21,7 @@ import com.news.ui.design.DesignActivity;
 import com.news.ui.home.contract.HomeFragmentContract;
 import com.news.ui.rude.NormalActivity;
 import com.news.ui.rude.RudeActivity;
+import com.news.ui.tools.ToolsTestActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,7 +69,7 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
         gridLayoutHelper.setVGap(16);   // 控制子元素之间的垂直间距
         gridLayoutHelper.setHGap(0);    // 控制子元素之间的水平间距
         gridLayoutHelper.setBgColor(Color.WHITE);
-        return new BaseDelegateAdapter(mContext, gridLayoutHelper, R.layout.item_find, 6, 2) {
+        return new BaseDelegateAdapter(mContext, gridLayoutHelper, R.layout.item_find, 7, 2) {
             @Override
             public void onBindViewHolder(BaseViewHolder holder, @SuppressLint("RecyclerView") final int position) {
                 super.onBindViewHolder(holder, position);
@@ -106,6 +107,11 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
                             break;
                             case 5: {
                                 intent = new Intent(mContext, NormalActivity.class);
+                                mContext.startActivity(intent);
+                            }
+                            break;
+                            case 6: {
+                                intent = new Intent(mContext, ToolsTestActivity.class);
                                 mContext.startActivity(intent);
                             }
                             break;

@@ -47,4 +47,5 @@ dependencies {
     implementation project(':customlib')
     implementation project(':hintlib')
     implementation project(':hellocharts')
+    implementation project(':banner')
 }

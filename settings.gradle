@@ -1,1 +1,1 @@
-include ':app', ':library', ':hellocharts', ':customlib', ':hintlib'
+include ':app', ':library', ':hellocharts', ':customlib', ':hintlib', ':banner'

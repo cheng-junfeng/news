@@ -15,6 +15,7 @@
         <item>@drawable/light_checked</item>
         <item>@drawable/light_checked</item>
         <item>@drawable/light_checked</item>
+        <item>@drawable/light_checked</item>
     </integer-array>
     <!--发现页图片对应的位子-->
     <string-array name="find_gv_title1">
@@ -24,5 +25,6 @@
         <item>Design</item>
         <item>Rude</item>
         <item>Normal</item>
+        <item>ToolTest</item>
     </string-array>
 </resources>

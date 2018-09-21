@@ -97,6 +97,18 @@
 
         <activity android:name=".ui.rude.RudeActivity"></activity>
         <activity android:name=".ui.rude.NormalActivity"></activity>
+        <activity android:name=".ui.tools.ToolsTestActivity"></activity>
+
+        <!-- 适配android7.0应用间共享文件FileProvider -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
     </application>
 
 </manifest>

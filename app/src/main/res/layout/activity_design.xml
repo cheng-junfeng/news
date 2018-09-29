@@ -5,66 +5,145 @@
     android:orientation="vertical"
     android:layout_gravity="center">
 
-    <Button
-        android:id="@+id/progress1"
-        android:textAllCaps="false"
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/news_scroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Progress 1" />
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="true"
+        android:scrollbarFadeDuration="1000"
+        android:scrollbarSize="5pt"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+        android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track">
+        <LinearLayout
+            android:id="@+id/news_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="28pt"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/progress2"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Progress 2" />
+            <Button
+                android:id="@+id/progress1"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress 1" />
 
-    <Button
-        android:id="@+id/progress3"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Progress 3" />
+            <Button
+                android:id="@+id/progress2"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress 2" />
 
-    <Button
-        android:id="@+id/progress4"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Progress 4" />
+            <Button
+                android:id="@+id/progress3"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress 3" />
 
-    <Button
-        android:id="@+id/progress5"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Progress 5" />
+            <Button
+                android:id="@+id/progress4"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress 4" />
 
-    <Button
-        android:id="@+id/progress6"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Progress 6" />
+            <Button
+                android:id="@+id/progress5"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress 5" />
 
-    <Button
-        android:id="@+id/progress7"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Progress 7" />
+            <Button
+                android:id="@+id/progress6"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress 6" />
 
-    <Button
-        android:id="@+id/selfViewGroup"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="自定义ViewGroup" />
+            <Button
+                android:id="@+id/progress7"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress 7" />
 
-    <Button
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:id="@+id/selftView"
-        android:text="自定义View"
-        android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/selfViewGroup"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义ViewGroup" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/selftView"
+                android:text="自定义View"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:text="Test1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

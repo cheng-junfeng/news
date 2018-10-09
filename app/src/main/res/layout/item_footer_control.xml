@@ -60,7 +60,7 @@
             android:drawablePadding="@dimen/offset_5dp"
             android:textSize="@dimen/text_size_small"
             android:checked="false"
-            android:text="Msg"
+            android:text="News"
             android:textColor="@color/tab_host_text_normal"
             android:layout_weight="1" />
 

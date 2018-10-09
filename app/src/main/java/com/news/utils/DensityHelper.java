@@ -1,4 +1,4 @@
-package com.news;
+package com.news.utils;
 
 import android.app.Activity;
 import android.app.Application;
@@ -25,7 +25,7 @@ public class DensityHelper {
      * @param context
      * @param designWidth 设计稿的宽度
      */
-    private static void resetDensity(Context context, float designWidth){
+    public static void resetDensity(Context context, float designWidth){
         if(context == null)
             return;
 

@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.library.base.BaseAppManager;
 import com.news.net.api.ApiConstants;
+import com.news.utils.DensityHelper;
 import com.news.utils.ImageLoaderHelper;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
@@ -14,7 +15,7 @@ public class NewsApplication extends Application {
         super.onCreate();
         ImageLoader.getInstance().init(ImageLoaderHelper.getInstance(this).getImageLoaderConfiguration(ApiConstants.Paths.IMAGE_LOADER_CACHE_PATH));
 
-        new DensityHelper(this, 750).activate();
+        new DensityHelper(this, 720).activate();
     }
 
     @Override

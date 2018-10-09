@@ -6,9 +6,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.RadioButton;
 
 import com.news.R;
@@ -17,7 +16,7 @@ import com.news.ui.home.adapter.ViewPagerAdapter;
 import com.news.ui.home.fragment.AboutUsFragment;
 import com.news.ui.home.fragment.HomeFragment;
 import com.news.ui.home.fragment.ImagesListFragment;
-import com.news.ui.qrcode.CaptureActivity;
+import com.news.ui.home.fragment.NewsFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -67,7 +66,6 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
 
     @Override
     protected void initViews() {
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);// 去掉默认的返回箭头
         normalColor = getResources().getColor(R.color.tab_host_text_normal);
         selectColor = getResources().getColor(R.color.tab_host_text_select);
 
@@ -78,7 +76,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
 
     HomeFragment homeFragment;
     ImagesListFragment findFragment;
-    ImagesListFragment msgFragment;
+    NewsFragment msgFragment;
     AboutUsFragment meFragment;
     Fragment[] mFragments;
 
@@ -86,7 +84,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     private void initViewPager() {
         homeFragment = new HomeFragment();
         findFragment = new ImagesListFragment();
-        msgFragment = new ImagesListFragment();
+        msgFragment = new NewsFragment();
         meFragment = new AboutUsFragment();
         mFragments = new Fragment[]{homeFragment, findFragment, msgFragment, meFragment};
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(), mFragments);
@@ -134,20 +132,6 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         if (position == pre_index) {
             return;
         }
-        switch (position) {
-            case 0:
-                setTitle("Home");
-                break;
-            case 1:
-                setTitle("Beaty");
-                break;
-            case 2:
-                setTitle("Msg");
-                break;
-            case 3:
-                setTitle("Mine");
-                break;
-        }
         if (pre_index >= 0) {
             radioButtons[pre_index].setChecked(false);
             radioButtons[pre_index].setTextColor(normalColor);
@@ -170,22 +154,6 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
 
     @Override
     public void onPageScrollStateChanged(int state) {
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_home, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_capture:
-                readyGo(CaptureActivity.class);
-                break;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     @Override

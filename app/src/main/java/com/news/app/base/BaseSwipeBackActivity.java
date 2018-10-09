@@ -46,7 +46,6 @@ public abstract class BaseSwipeBackActivity extends BaseSwipeBackCompatActivity 
         return (NewsApplication) getApplication();
     }
 
-
     @Override
     public void showError(String msg) {
         toggleShowError(true, msg, null);

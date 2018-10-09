@@ -81,16 +81,11 @@ public class AboutUsFragment extends BaseFragment {
         mItemData = new AboutListEntity();
         mItemData.setTitle(mAboutArray[0]);
         mItemData.setSubTitle(String.format(getResources().getString(R.string.splash_version), BuildConfig.VERSION_NAME));
-
         mListViewDataAdapter.getDataList().add(mItemData);
 
         mItemData = new AboutListEntity();
         mItemData.setTitle(mAboutArray[1]);
-        mItemData.setSubTitle("http://www.baidu.com");
-        mListViewDataAdapter.getDataList().add(mItemData);
-
-        mItemData = new AboutListEntity();
-        mItemData.setTitle(mAboutArray[2]);
+        mItemData.setSubTitle("android_asset/open_source");
         mListViewDataAdapter.getDataList().add(mItemData);
 
         mListViewDataAdapter.notifyDataSetChanged();
@@ -104,16 +99,8 @@ public class AboutUsFragment extends BaseFragment {
                         // version
                         break;
                     case 1:
-                        // company
-                        extras.putString(BaseWebActivity.BUNDLE_KEY_TITLE, mAboutArray[1]);
-                        extras.putBoolean(BaseWebActivity.BUNDLE_KEY_SHOW_BOTTOM_BAR, false);
-                        extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "http://www.baidu.com");
-
-                        readyGo(BaseWebActivity.class, extras);
-                        break;
-                    case 2:
                         // open source description
-                        extras.putString(BaseWebActivity.BUNDLE_KEY_TITLE, mAboutArray[2]);
+                        extras.putString(BaseWebActivity.BUNDLE_KEY_TITLE, mAboutArray[1]);
                         extras.putBoolean(BaseWebActivity.BUNDLE_KEY_SHOW_BOTTOM_BAR, false);
                         extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "file:///android_asset/open_source.html");
 
